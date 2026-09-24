@@ -1,0 +1,1621 @@
+body {
+    font-family: 'Montserrat';
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 120px;
+    }
+}
+
+
+#book-now {
+	padding: 8px 24px 8px 24px;
+	border-radius: 2px;
+
+	font-family: 'Montserrat';
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+#landing {
+    height: 500px !important;
+    width: 100%;
+    background: linear-gradient(
+        rgba(0, 34, 65, 0.61),
+        rgba(0, 34, 65, 0.61)
+    ),
+    url("./images/pal-image.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 767px) {
+    #landing {
+        height: 40vh;
+        background-position: center;
+    }
+}
+
+#title-1 {
+	font-size: 20px;
+}
+
+#title-2 {
+	font-size: 55px;
+	font-weight: 700;
+	max-width: 450px;
+}
+
+#title-3 {
+	font-weight: 500;
+	max-width: 500px;
+}
+
+#search-flight {
+	width: 100%;
+    border: 3px solid;
+    border-color: #003363;
+    box-shadow: 6px 6px 0px 0px #002868;
+    background-color: white;
+}
+
+.trip-option {
+	padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+ 
+}
+
+.btn-check:checked + .trip-option {
+    background-color: #003363;
+    color: white;
+}
+
+
+.cabin-options {
+    display: flex;
+    gap: 30px;
+    color: #003363;
+    font-size: 12px;
+}
+
+.cabin-radio {
+    display: none;
+}
+
+.cabin-options label {
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.cabin-radio:checked + label {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#featured {
+	font-size: 55px;
+	color: #003363;
+}
+
+#featured-p {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 15px;
+	width: 450px;
+}
+
+.card-shadow {
+	box-shadow: 0 4px 12px rgba(0, 51, 99, 0.4);
+	transition: transform 0.2s ease;
+}
+
+.card-shadow:hover {
+	transform: translateY(-5px);
+}
+
+.card-img-top {
+	height: 300px;
+	object-fit: cover;
+}
+
+#mabuhay {
+	background-color: #07152b;
+}
+
+#mabuhay-title {
+	width: 250px;
+	border: 2px solid #EAA221;
+	color: #EAA221;
+}
+
+#mabuhay-comfort {
+	width: 500px;
+}
+.mabuhay-feature-card {
+	width: 18rem;
+	background-color: #0038A8;
+	border: 1px solid #EAA221;
+}
+
+.mabuhay-feature-card p {
+	color: white;
+}
+
+.mabuhay-feature-card i {
+	color: #EAA221;
+}
+
+.mabuhay-image-container {
+	border: 3px solid #EAA221;
+	box-shadow: 6px 6px 0px 0px #FDB515;
+ 
+}
+.mabuhay-image {
+    object-fit: cover;
+}
+
+@media (min-width: 576px) {
+
+    #title-2 {
+        font-size: 45px;
+        max-width: 450px;
+    }
+
+    #featured {
+        font-size: 45px;
+    }
+
+    #featured-p {
+        width: 400px;
+    }
+
+    #mabuhay-comfort {
+        width: 450px;
+    }
+
+    .mabuhay-feature-card {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   MEDIUM DEVICES - MD
+   768px and up
+========================= */
+
+@media (min-width: 768px) {
+
+    #home {
+        height: 650px;
+    }
+
+    #landing {
+        height: 80vh;
+    }
+
+    #title-1 {
+        font-size: 18px;
+    }
+
+    #title-2 {
+        font-size: 50px;
+        max-width: 450px;
+    }
+
+    #title-3 {
+        max-width: 500px;
+    }
+
+    #featured {
+        font-size: 48px;
+    }
+
+    #featured-p {
+        width: 450px;
+    }
+
+    #mabuhay-comfort {
+        width: 100%;
+    }
+
+    .mabuhay-feature-card {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   LARGE DEVICES - LG
+   992px and up
+========================= */
+
+@media (min-width: 992px) {
+
+    #home {
+        height: 700px;
+    }
+
+    #landing {
+        height: 80vh;
+    }
+
+    #title-1 {
+        font-size: 20px;
+    }
+
+    #title-2 {
+        font-size: 55px;
+        max-width: 450px;
+    }
+
+    #featured {
+        font-size: 55px;
+    }
+
+    #featured-p {
+        width: 450px;
+    }
+
+    #mabuhay-comfort {
+        width: 500px;
+    }
+
+    .mabuhay-feature-card {
+        width: 100%;
+    }
+}
+
+.submit-arrow {
+	border: 1px solid #003363;
+	background-color: #CE1126;
+	color: white;
+}
+
+.section-line {
+    width: 64px;
+    height: 4px;
+    background-color: #003363;
+}
+
+.destination-btn {
+    color: #6c757d;
+    border: none;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+}
+
+.destination-btn:hover {
+    color: #003363;
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: #00205B;
+    border-color: #00205B;
+}
+
+.flight-price {
+	background-color: rgba(253, 181, 21, 0.4);
+    border: 1px solid rgba(253, 181, 21, 0.5); 
+    padding: 0.25rem 0.625rem;
+}
+
+.fare-label {
+    font-size: 10px;
+    color: #78350f; /* amber-900 */
+}
+
+.fare-price {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 800; /* font-extrabold */
+    color: #003363; /* pal-navy */
+    font-family: monospace; /* font-mono */
+}
+
+.destination-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    text-transform: uppercase; /* uppercase */
+    color: #003363; /* text-pal-navy */
+    letter-spacing: -0.025em; /* tracking-tight */
+    transition: color 0.2s ease; /* transition */
+}
+
+.destination-card:hover .destination-title {
+    color: #0066b3; /* pal-blue */
+}
+
+.airport-name {
+    color: #64748b;
+    letter-spacing: 0.05em;
+    margin-top: 0.125rem;
+}
+
+.flight-description {
+    font-size: 1rem; /* text-xs */
+    line-height: 1.625; /* leading-relaxed */
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* line-clamp-2 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.flight-price-2 {
+    background-color: #ecfdf5; /* emerald-50 */
+    border: 1px solid #a7f3d0; /* emerald-200 */
+    padding: 0.25rem 0.625rem !important; /* px-2.5 py-1 */
+    border-radius: 0.25rem; /* rounded */
+    width: 100px;
+    height: 60px;
+
+}
+
+.fare-label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #065f46; /* emerald-800 */
+}
+
+.fare-price {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 800; /* font-extrabold */
+    color: #003363; /* PAL navy */
+    font-family: monospace; /* font-mono */
+}
+
+.flight-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    font-size: 11px;
+    font-family: monospace;
+    color: #64748b;
+    border-color: #f1f5f9 !important;
+}
+
+.detail-label {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+.detail-value {
+    color: #1e293b;
+}
+
+.booking-btn {
+    background-color: #003363;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    transition: background-color 0.2s ease;
+}
+
+.booking-btn:hover {
+    background-color: #0066b3;
+}
+
+.timetable-header {
+    border-color: #e5e7eb !important;
+}
+
+.timetable-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #c8102e;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #c8102e;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.flight-summary-title {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #003363;
+    letter-spacing: -0.025em;
+    margin-top: 0.125rem;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .flight-summary-title {
+        font-size: 1.5rem;
+    }
+}
+
+.hub-badge {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #003363;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.operation-badge {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #047857;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.operation-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+}
+.flight-destination {
+    font-family: 'Montserrat';
+    background-color: #0F172A;
+}
+
+.departure-text {
+    background-color: #CE1126;
+    color: white;
+    border: 1px solid #CE1126;
+    border-radius: 5px;
+    padding: 8px 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.departure-info {
+    font-size: 20px;
+}
+
+.mabuhay-text {
+    background-color: #0038A8;
+    color: white;
+    border: 1px solid #0038A8;
+    border-radius: 5px;
+    padding: 8px 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.date-info {
+    color: #E2E8F0;
+}
+
+.origin-time,
+.destination-time {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: white;
+}
+
+.origin-name,
+.destination-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #003363;
+    margin-top: 0.125rem;
+}
+
+.origin-airport,
+.destination-airport {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+}
+
+.duration-info {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.route-line {
+    position: relative;
+}
+
+.route-line::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    height: 1px;
+    background-color: #cbd5e1;
+    z-index: 0;
+}
+
+.route-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.origin-dot {
+    background-color: #003363;
+}
+
+.destination-dot {
+    background-color: #c8102e;
+}
+
+.plane-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.plane-icon i {
+    font-size: 1rem;
+}
+
+.flight-info {
+    font-size: 11px;
+    font-weight: 500;
+    color: #64748b;
+    margin-top: 0.5rem;
+}
+
+.amenities-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.amenity {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #334155;
+    background-color: #f8fafc;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.amenity i {
+    color: #059669;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 575.98px) {
+    .amenities-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.booking-summary-title {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 700;
+    color: #00205B;
+}
+
+.booking-summary-count {
+    font-family: 'Montserrat';
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    color: #6c757d;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: #E2E8F0;
+    font-weight: bold;
+}
+
+.fare-row {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.promo-code  {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.apply-button  {
+    background-color: #00205B;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+.total-fare {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.total-amount {
+    color: #E3262E;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.confirm-booking {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-color: #00205B;
+    border-radius: 15px;
+    color: white;
+}
+
+.flight-services {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: bold;
+    color: #00205B;
+}
+
+#amenities-services {
+    background-color: #E2E8F0;
+}
+
+.complimentary-inclusions{
+    background-color: #ecfdf5;
+    border: 1px solid #065f46;
+    border-radius: 20px;
+    color: #065f46;
+    font-weight: 600;
+}
+
+.card-title {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    color: #00205B;
+}
+
+.header-confirmation {
+    /* Tailwind space-y-3 */
+}
+
+.header-confirmation > * {
+    margin-bottom: 1rem;
+}
+
+.flight-badge {
+    background-color: #eff6ff; /* blue-50 */
+    color: #0038A8;
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #CE1126;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.confirmation-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800;
+    color: #002266;
+    letter-spacing: -0.025em;
+    margin-top: 0.75rem;
+}
+
+.confirmation-description {
+    font-size: 0.875rem; /* text-sm */
+    color: #64748b;
+    max-width: 32rem; /* max-w-lg */
+    line-height: 1.625;
+}
+
+@media (min-width: 576px) {
+    .confirmation-title {
+        font-size: 2.25rem; /* sm:text-4xl */
+    }
+
+    .confirmation-description {
+        font-size: 1rem; /* sm:text-base */
+    }
+}
+
+.section-container {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .section-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fare-summary {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .fare-price {
+        font-size: 1.25rem;
+    }
+}
+
+.fare-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (max-width: 575.98px) {
+    .fare-summary {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .fare-price {
+        font-size: 1.25rem;
+    }
+}
+
+.route-summary {
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease;
+}
+
+.route-summary:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.route-image {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background-color: #f1f5f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.route-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.route-time {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.route-arrow {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.non-stop-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: #047857;
+    background-color: #ecfdf5;
+    padding: 0.125rem 0.5rem;
+    border-radius: 50rem;
+}
+
+.route-details {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.125rem;
+}
+
+.route-date {
+    font-size: 11px;
+    color: #94a3b8;
+    font-family: monospace;
+    margin-top: 0.25rem;
+}
+
+.fare-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fare-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.fare-price {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #002266;
+    letter-spacing: -0.025em;
+}
+
+.fare-currency {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.fare-note {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+.passenger-details {
+    border: 1px solid #e2e8f0;
+}
+
+.step-number {
+    width: 24px;
+    height: 24px;
+    background-color: #002266;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.passenger-type {
+    color: #0038A8;
+    background-color: #eff6ff;
+    padding: 0.25rem 0.625rem;
+    border-radius: 0.375rem;
+}
+
+.passenger-input {
+    width: 100%;
+    font-size: 0.875rem;
+    background-color: rgba(248, 250, 252, 0.6);
+    color: #1e293b;
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    padding: 0.625rem 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.passenger-input:focus {
+    background-color: #fff;
+    border-color: rgba(0, 56, 168, 0.2);
+    box-shadow: 0 0 0 0.25rem rgba(0, 56, 168, 0.1);
+}
+
+.input-note {
+    display: block;
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 0.25rem;
+}
+
+.mobile-input {
+    font-size: 13px;
+}
+
+.passport-input {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.passport-note {
+    font-size: 10px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.payment-section {
+    border: 1px solid #e2e8f0;
+}
+
+.payment-header {
+    border-color: #f1f5f9 !important;
+}
+
+.step-number {
+    width: 24px;
+    height: 24px;
+    background-color: #002266;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+/* Payment Methods */
+
+.payment-option {
+    cursor: pointer;
+    margin: 0;
+}
+
+.payment-radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.payment-method {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #f8fafc;
+    color: #475569;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.payment-radio:checked + .payment-method {
+    background-color: #002266;
+    color: white;
+}
+
+
+/* Grand Total */
+
+.grand-total {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #002266;
+}
+
+
+/* Continue to Payment */
+
+.booking-payment-btn {
+    width: 100%;
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    background-color: #ce1126;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    box-shadow: 0 0.5rem 1rem rgba(220, 38, 38, 0.2);
+    transition: all 0.2s ease;
+}
+
+.booking-payment-btn:hover {
+    background-color: #ba0c1f;
+    color: white;
+    box-shadow: 0 0.5rem 1rem rgba(220, 38, 38, 0.3);
+}
+
+.booking-payment-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* Confirmed */
+
+.booking-confirmed {
+    width: 100%;
+    padding: 0.875rem 2rem;
+    border-radius: 0.75rem;
+    background-color: #198754;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+
+/* Security */
+
+.security-signals {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+.security-signals i {
+    font-size: 0.875rem;
+}
+
+
+/* Desktop */
+
+@media (min-width: 576px) {
+    .booking-payment-btn,
+    .booking-confirmed {
+        width: auto;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+    .payment-methods {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-methods {
+        flex-wrap: wrap;
+    }
+
+    .payment-method {
+        padding: 0.5rem 0.625rem;
+    }
+}
+
+.about-header {
+    border-bottom: 2px solid #002868 !important;
+}
+
+.about-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #CE1126;
+    display: inline-block;
+}
+
+.about-label {
+    color: #0038A8;
+    letter-spacing: 0.15em;
+}
+
+.about-title {
+    font-size: 1.875rem;
+    color: #002868;
+    letter-spacing: -0.025em;
+}
+
+.about-description {
+    font-size: 0.875rem;
+}
+
+@media (min-width: 576px) {
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}
+
+.heritage-card {
+    border: 2px solid #002868;
+    box-shadow: 6px 6px 0 rgba(0, 40, 104, 0.12);
+}
+
+.heritage-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #CE1126;
+}
+
+.heritage-title {
+    font-size: 1.5rem;
+    color: #002868;
+    letter-spacing: -0.025em;
+}
+
+.heritage-content {
+    font-size: 0.875rem;
+    line-height: 1.625;
+}
+
+.heritage-content p {
+    margin-bottom: 1rem;
+}
+
+.heritage-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Metric Boxes */
+
+.metric-box {
+    background-color: #f5f5f5;
+    border: 1px solid #002868;
+}
+
+.metric-number {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.metric-blue {
+    color: #0038A8;
+}
+
+.metric-red {
+    color: #CE1126;
+}
+
+.metric-navy {
+    color: #002868;
+}
+
+.metric-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #737373;
+    margin-top: 0.25rem;
+}
+
+
+/* Connect Card */
+
+.connect-card {
+    border: 2px solid #002868;
+    box-shadow: 5px 5px 0 rgba(0, 40, 104, 0.1);
+}
+
+.connect-header {
+    border-bottom: 2px solid #002868;
+}
+
+.connect-title {
+    font-size: 1rem;
+    color: #002868;
+    letter-spacing: 0.05em;
+}
+
+.connect-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FDB515;
+}
+
+.connect-description {
+    font-size: 0.75rem;
+    line-height: 1.625;
+}
+
+
+/* Links */
+
+.connect-link {
+    border: 1px solid #e5e5e5;
+    color: #002868;
+    text-decoration: none;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.connect-link:hover {
+    border-color: #0038A8;
+    background-color: #fafafa;
+}
+
+.channel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0038A8;
+    flex-shrink: 0;
+}
+
+.link-arrow {
+    color: #a3a3a3;
+    transition: color 0.2s ease;
+}
+
+.connect-link:hover .link-arrow {
+    color: #0038A8;
+}
+
+
+/* Responsive */
+
+@media (min-width: 576px) {
+    .heritage-title {
+        font-size: 1.875rem;
+    }
+
+    .heritage-content {
+        font-size: 1rem;
+    }
+
+    .metric-number {
+        font-size: 1.5rem;
+    }
+}
+
+.media-banner {
+    border: 2px solid #FDB515;
+    background-color: #002266;
+    box-shadow: 6px 6px 0px 0px #FDB515;
+}
+
+.media-content {
+    max-width: 42rem;
+}
+
+.media-label {
+    border: 1px solid #FDB515;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: #FDB515;
+    background-color: rgba(0, 40, 104, 0.5);
+}
+
+.media-title {
+    font-size: 1.5rem;
+    letter-spacing: -0.025em;
+    margin-top: 0.5rem;
+}
+
+.media-description {
+    font-size: 0.75rem;
+    line-height: 1.625;
+    color: #e5e5e5 !important;
+}
+
+.media-button {
+    padding: 1rem 2rem;
+    background-color: #CE1126;
+    border: 2px solid white;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    box-shadow: 6px 6px 0px 0px #002868;
+    transition: all 0.2s ease;
+}
+
+.media-button:hover {
+    background-color: #BA0C1F;
+    color: white;
+    transform: translate(1px, 1px);
+}
+
+@media (min-width: 576px) {
+    .media-title {
+        font-size: 2.25rem;
+    }
+
+    .media-description {
+        font-size: 0.875rem;
+    }
+}
+
+.contact-header  {
+    font-family: 'Montserrat';
+    background-color: #002868;
+    color: white;
+}
+
+.contact-title {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.text-pal-navy {
+    color: #002868;
+}
+
+.text-pal-red {
+    color: #CE1126;
+}
+
+
+/* Header */
+
+.inquiry-header {
+    border-color: #e2e8f0 !important;
+}
+
+.inquiry-header h2 {
+    color: #002868;
+}
+
+
+/* Form Labels */
+
+.inquiry-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.375rem;
+}
+
+
+/* Form Inputs */
+
+.inquiry-input {
+    width: 100%;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.inquiry-input:focus {
+    background-color: white;
+    border-color: #0038A8;
+    box-shadow: 0 0 0 0.25rem rgba(0, 56, 168, 0.15);
+}
+
+
+/* PNR */
+
+.pnr-input {
+    padding-right: 5.5rem;
+    letter-spacing: 0.08em;
+}
+
+.pnr-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.optional-text {
+    font-size: 0.6875rem;
+}
+
+
+/* Submit Button */
+
+.inquiry-submit {
+    min-width: 200px;
+    padding: 1rem 2rem;
+    background-color: #002868;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.inquiry-submit:hover {
+    background-color: #0038A8;
+    color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
+}
+
+.inquiry-submit:active {
+    transform: scale(0.98);
+}
+
+
+/* Response Notice */
+
+.response-note {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+}
+
+.response-icon {
+    font-size: 1rem;
+    color: #0038A8;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+
+    .inquiry-submit {
+        width: 100%;
+    }
+
+    .inquiry-label.d-flex {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+}
+
+/* Background decoration */
+.social-bg-circle {
+    position: absolute;
+    right: -1.5rem;
+    bottom: -1.5rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: rgba(239, 246, 255, 0.6);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.social-content {
+    z-index: 10;
+}
+
+/* Header */
+.social-header {
+    border-color: #e2e8f0 !important;
+}
+
+.social-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: #ce1126;
+}
+
+.text-pal-navy {
+    color: #002868;
+}
+
+.text-pal-blue {
+    color: #0038a8;
+}
+
+/* Verified Accounts */
+.bg-blue-light {
+    background-color: #eff6ff;
+}
+
+.border-blue {
+    border-color: #bfdbfe !important;
+}
+
+.verified-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #34d399;
+}
+
+/* Social cards */
+.social-card {
+    border-color: #e2e8f0 !important;
+    transition: all 0.2s ease;
+}
+
+.social-card:hover {
+    border-color: #0038a8 !important;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+/* Social icons */
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.social-icon i {
+    font-size: 1.1rem;
+}
+
+/* Facebook */
+.facebook-icon {
+    background-color: rgba(24, 119, 242, 0.1);
+    color: #1877f2;
+}
+
+/* X */
+.x-icon {
+    background-color: #111827;
+    color: white;
+}
+
+/* Instagram */
+.instagram-icon {
+    background: linear-gradient(
+        45deg,
+        #f59e0b,
+        #f43f5e,
+        #9333ea
+    );
+    color: white;
+}
+
+/* LinkedIn */
+.linkedin-icon {
+    background-color: rgba(10, 102, 194, 0.1);
+    color: #0a66c2;
+}
+
+/* YouTube */
+.youtube-icon {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff0000;
+}
+
+/* TikTok */
+.tiktok-icon {
+    background-color: #000;
+    color: white;
+}
+
+/* Card description */
+.social-description {
+    font-size: 11px;
+    color: #64748b;
+    line-height: 1.625;
+}
+
+/* Verification notice */
+.verification-note {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.verification-status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #10b981;
+    flex-shrink: 0;
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+
+    .verification-note {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0.75rem;
+    }
+
+    .verification-note a {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .sale-alert {
+        display: none !important;
+    }
+}
+
+.promo-code input {
+    flex: 1;
+    min-width: 0;
+}
+
+.promo-code input {
+    flex: 1;
+    min-width: 0;
+}
+
+.promo-code .apply-button {
+    flex-shrink: 0;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Philippine Airlines</title>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Google Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-3 border-primary">
+		<div class="container-fluid">
+			<img src="./images/logo.jfif" class="logo">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto align-items-end gap-4">
+					<a class="nav-link active border-bottom border-danger border-2" aria-current="page" href="#">Home</a>
+					<a class="nav-link" href="./flights-page.html">Flights</a>
+					<a class="nav-link" href="./about-us.html">About Us</a>
+					<a class="nav-link" href="./contact-us.html">Contact Us</a>
+					<a id="book-now" class="nav-link bg-danger" href="./flights-page.html" tabindex="-1">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+ 
+	<div class="container-fluid mt-5 px-4 pb-5 mb-5">
+		<div class="mx-auto" id="landing">
+			<div class="d-flex p-3 justify-content-end align-items-start flex-column">
+				<div class="ms-5 text-warning" id="title-1">Asia's First Airline • Established 1941</div>
+				<div class="ms-5 text-white py-2" id="title-2">EXPERIENCE THE HEART OF THE FILIPINO.</div>
+				<div class="ms-5 text-white" id="title-3">Warm hospitality, curated Philippine flavors, and direct flagship connections across the Philippine Islands and the Pacific</div>
+			</div>
+		</div>
+	</div>
+	<div class="container d-flex justify-content-center mb-4 mb-md-5 pb-4 pb-md-5">
+		<div class="row" id="search-flight">
+			<div class="col-12 mt-sm-1 d-flex flex-column flex-md-row justify-content-between gap-4 py-4 py-md-5 border-bottom border-3 border-secondary">
+
+			    <div class="trip-options">
+			        <input type="radio" class="btn-check" name="trip" id="roundTrip" checked>
+			        <label class="trip-option" for="roundTrip">
+			            Round Trip
+			        </label>
+
+			        <input type="radio" class="btn-check" name="trip" id="oneWay">
+			        <label class="trip-option" for="oneWay">
+			            One Way
+			        </label>
+
+			        <input type="radio" class="btn-check" name="trip" id="multiCity">
+			        <label class="trip-option" for="multiCity">
+			            Multi-City
+			        </label>
+			    </div>
+
+			    <div class="cabin-options">
+			        <p>Class:</p>
+
+			        <input type="radio" name="cabin" id="mabuhay" class="cabin-radio">
+			        <label for="mabuhay">MABUHAY CLASS</label>
+
+			        <input type="radio" name="cabin" id="premium" class="cabin-radio">
+			        <label for="premium">/ PREMIUM</label>
+
+			        <input type="radio" name="cabin" id="economy" class="cabin-radio">
+			        <label for="economy">/ ECONOMY</label>
+			    </div>
+
+			</div>
+
+			<div class="col-md-12">
+				<div class="row mx-auto pt-4 w-100">
+					<div class="col-12 col-md-3 mb-3 mb-md-0">
+						<div class="border-primary border-3 card px-3 pt-3 h-100">
+							<h6>FROM (ORIGIN)</h6>
+							<div class="d-flex justify-content-between">
+								<p>Manila (MNL)</p>
+								<p class="text-danger">PHL</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-3 mb-3 mb-md-0">
+						<div class="border-primary border-3 card px-3 pt-3 h-100">
+							<h6>To (Destination)</h6>
+							<div class="d-flex justify-content-between">
+								<p>Tokyo (HND)</p>
+								<p class="text-danger">PHL</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-3 mb-3 mb-md-0">
+						<div class="border-primary border-3 card px-3 pt-3 h-100">
+							<h6>Travel Dates</h6>
+							<div class="d-flex justify-content-between">
+								<p>Nov 10 — Nov 24</p>
+								<p class="text-danger">PHL</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-3 mb-3 mb-md-0">
+						<div class="border-primary border-3 card px-3 pt-3 h-100">
+							<h6>Travelers / Cabin</h6>
+							<div class="d-flex justify-content-between">
+								<p>1 Adult, Mabuhay Class</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 d-flex justify-content-end pb-4">
+				<div class="text-center">
+					<a id="book-now" class="bg-danger d-inline-block mt-5 text-decoration-none" href="./flights-page.html">SEARCH FLIGHTS</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="container-fluid mt-4 mt-md-0 pt-5">
+		<div class="row border-bottom border-3 border-primary pb-4">
+			<div class="col-12 d-flex flex-column flex-md-row justify-content-between">
+				<h2 id="featured">Featured Destinations</h2>
+				<p class="pt-0 pt-md-3 ms-0 ms-md-2" id="featured-p">Discover paradise in our 7,641 islands or connect smoothly non-stop to premier metropolitan hubs across Asia and North America.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid pt-5 pb-5">
+		<div class="row row-cols-1 row-cols-md-3 g-4" id="featured-samples">
+			<div class="col">
+				<div class="card h-100 border border-2 border-primary card-shadow">
+					<img class="card-img-top" src="./images/boracay.png">
+					<div class="d-flex justify-content-between card-title mx-2">
+						<h2 class="text-primary fw-bold">Boracay (Caticlan)</h2>
+						<p>From ₱3,480</p>
+					</div>
+					<p class="ms-2">Pristine powdery white sands, vibrant sunsets, and seamless island transfer services direct from Godofredo P. Ramos Airport.</p>
+					<div class="border-top border-bottom border-2 border-secondary">
+						<div class="d-flex justify-content-between mx-2 pt-2">
+							<h6>AIRCRAFT:</h6>
+							<p class="text-primary fw-bold">De Havilland Dash 8-400</p>
+						</div>
+						<div class="d-flex justify-content-between mx-2">
+							<h6>FREQUENCY:</h6>
+							<p class="text-primary fw-bold">7x Daily Departures</p>
+						</div>
+					</div>
+					<div class="text-center bg-primary mx-2 my-4 py-3">
+						<a class="text-decoration-none text-white" href="./flight-details-2.html">Book Boracay Flight</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 border border-2 border-primary card-shadow">
+					<img class="card-img-top" src="./images/japan.jpeg">
+					<div class="d-flex justify-content-between card-title mx-2">
+						<h2 class="text-primary fw-bold">Tokyo, Japan</h2>
+						<p>From $380</p>
+					</div>
+					<p class="ms-2">Explore Ginza shopping, ancient Asakusa shrines, and savour authentic Japanese or Filipino in-flight dining curated by master chefs.</p>
+					<div class="border-top border-bottom border-2 border-secondary">
+						<div class="d-flex justify-content-between mx-2 pt-2">
+							<h6>AIRCRAFT:</h6>
+							<p class="text-primary fw-bold">Airbus A350-900 / A321neo</p>
+						</div>
+						<div class="d-flex justify-content-between mx-2">
+							<h6>FREQUENCY:</h6>
+							<p class="text-primary fw-bold">2x Daily (08:25 / 14:40)</p>
+						</div>
+					</div>
+					<div class="text-center bg-primary mx-2 my-4 py-3">
+						<a class="text-decoration-none text-white" href="./flight-details.html">Book Tokyo Flight</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 border border-2 border-primary card-shadow">
+					<img class="card-img-top" src="./images/los-angeles.jpg">
+					<div class="d-flex justify-content-between card-title mx-2">
+						<h2 class="text-primary fw-bold">Los Angeles, USA</h2>
+						<p>From $720</p>
+					</div>
+					<p class="ms-2">Direct transpacific connection from Manila to California. Enjoy fully flat beds in Mabuhay Class, Filipino warm hospitality, and generous baggage.</p>
+					<div class="border-top border-bottom border-2 border-secondary">
+						<div class="d-flex justify-content-between mx-2 pt-2">
+							<h6>AIRCRAFT:</h6>
+							<p class="text-primary fw-bold">Boeing 777-300ER</p>
+						</div>
+						<div class="d-flex justify-content-between mx-2">
+							<h6>FREQUENCY:</h6>
+							<p class="text-primary fw-bold">Daily Non-Stop (22:15)</p>
+						</div>
+					</div>
+					<div class="text-center bg-primary mx-2 my-4 py-3">
+						<a class="text-decoration-none text-white" href="./flight-details-3.html">Book Los Angeles Flight</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid pt-5 pb-5 mb-5" id="mabuhay">
+		<div class="row mx-auto align-items-center">
+			<div class="col-md-6">
+				<div class="text-center" id="mabuhay-title">Philippine Airlines Hospitality</div>
+				<h2 class="fs-1 fw-black lh-1 text-uppercase text-white my-4" id="mabuhay-comfort">Mabuhay Class: Comfort & Warmth</h2>
+				<p class="text-white">Travel bathed in trademark Filipino warmth. In Gala Air Bookings signature Mabuhay Class, your personal lie-flat suite features direct aisle access, curated culinary delicacies including traditional Arroz Caldo, and world-class in-flight entertainment.</p>
+				<p class="text-secondary">Relax before departure at our newly renovated Mabuhay Lounges with dedicated showers, artisan coffee, and express priority boarding across major international hubs.</p>
+				<div class="row g-3 mb-4">
+				    <div class="col-12 col-sm-4">
+				        <div class="mabuhay-feature-card text-center p-4 h-100">
+				            <i class="bi bi-wifi"></i>
+				            <p class="mb-0">PAL Wi-Fi Onboard</p>
+				        </div>
+				    </div>
+
+				    <div class="col-12 col-sm-4">
+				        <div class="mabuhay-feature-card text-center p-4 h-100">
+				            <i class="bi bi-sliders2"></i>
+				            <p class="mb-0">Lie-Flat Suite</p>
+				        </div>
+				    </div>
+
+				    <div class="col-12 col-sm-4">
+				        <div class="mabuhay-feature-card text-center p-4 h-100">
+				            <i class="bi bi-clock"></i>
+				            <p class="mb-0">Mabuhay Lounge</p>
+				        </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-6 p-0 mt-sm-4 mabuhay-image-container">
+				<img class="w-100 h-100 mabuhay-image" src="./images/mabuhay.jpg">
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row g-4">
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<img src="./images/logo.jfif" class="img-fluid pb-3 logo">
+					<p>The flag carrier of the Philippines and Asia's first commercial airline, flying you to dream destinations with the Heart of the Filipino.</p>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>ABOUT PAL</h4>
+					<a class="text-decoration-none d-block" href="./about-us.html">About Our Airline</a>
+					<a class="text-decoration-none d-block" href="">Mabuhay Magazine</a>
+					<a class="text-decoration-none d-block" href="">Careers at PAL</a>
+					<a class="text-decoration-none d-block" href="">Fleet & Safety</a>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>MABUHAY MILES</h4>
+					<a class="text-decoration-none d-block" href="">Join Mabuhay Miles</a>
+					<a class="text-decoration-none d-block" href="">Redeem Flights</a>
+					<a class="text-decoration-none d-block" href="">Baggage Allowance</a>
+					<a class="text-decoration-none d-block" href="">Flight Status & Advisory</a>
+				</div>
+				<div class="col-12 col-md-12 col-lg-3 footer-column d-none d-md-block">
+					<h4>PAL SEAT SALE ALERTS</h4>
+					<p>Get early access to Ultimate Seat Sales and holiday promo fares.</p>
+					<input type="email" name="email" placeholder="Enter your email">
+					<a class="py-2 px-3 submit-arrow" href="">
+						<i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

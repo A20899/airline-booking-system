@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flights-page</title>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Google Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+	<!-- Navbar Start -->
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-3 border-primary">
+		<div class="container-fluid">
+			<img src="./images/logo.jfif" class="logo">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto align-items-end gap-4">
+					<a class="nav-link" aria-current="page" href="#">Home</a>
+					<a class="nav-link active border-bottom border-danger border-2" href="./flights-page.html">Flights</a>
+					<a class="nav-link" href="./about-us.html">About Us</a>
+					<a class="nav-link" href="./contact-us.html">Contact Us</a>
+					<a id="book-now" class="nav-link bg-danger" href="./flights-page.html" tabindex="-1">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+	<!-- Main Start -->
+		<div class="text-center py-5">
+			<p class="text-danger fw-bold">FLAGSHIP & ISLAND ROUTES</p>
+			<h1>AVAILABLE FLIGHTS</h1>
+			<div class="section-line mx-auto my-4 rounded-pill"></div>
+			<p class="text-secondary">Explore our available destinations and begin planning your next adventure with Asia's first commercial airline.</p>
+			<div class="mt-5 d-inline-flex flex-wrap justify-content-center gap-2 p-2 bg-light rounded-3 border">
+			    <button class="px-4 py-2 btn btn-primary btn-sm fw-bold rounded-2 shadow-sm">
+			        ALL DESTINATIONS
+			    </button>
+
+			    <button class="px-4 py-2 btn btn-sm fw-bold rounded-2 destination-btn">
+			        DOMESTIC PHILIPPINES
+			    </button>
+
+			    <button class="px-4 py-2 btn btn-sm fw-bold rounded-2 destination-btn">
+			        ASIA &amp; PACIFIC
+			    </button>
+
+			    <button class="px-4 py-2 btn btn-sm fw-bold rounded-2 destination-btn">
+			        NORTH AMERICA
+			    </button>
+
+			    <button class="px-4 py-2 btn btn-sm fw-bold rounded-2 destination-btn">
+			        AUSTRALIA
+			    </button>
+			</div>
+		</div>
+
+
+
+	<div class="container-fluid p-5 my-5">
+		<div class="row g-4">
+			<div class="col-6 col-lg-4">
+				<div class="card h-100">
+					<img src="./images/japan.jpeg" class="card-img-top" alt="...">
+					<div class="card-body d-flex justify-content-between">
+						<div>
+							<h4 class="card-title fw-bold text-uppercase destination-title">Tokyo, Japan</h4>
+							<p class="card-text small fw-semibold text-uppercase airport-name">Haneda & Narita International</p>
+						</div>
+						<div class="flight-price text-end rounded">
+							<h6 class="d-block text-uppercase fw-bold fare-label">Starting from</h6>
+							<div>
+								<p class="mb-0 fare-price">&#8369;18,450 </p>
+								<div>($330)</div>
+							</div>
+						</div>
+					</div>
+					<div class="px-2 w-75 px-3 ">
+						<p class="text-secondary mt-4 flight-description">Explore Ginza shopping, ancient Asakusa shrines, and savour authentic Japanese dining on daily flagship departures.</p>
+					</div>
+
+					<div class="mt-5 ps-3 pt-4 border-top flight-details">
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            AIRCRAFT:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Airbus A350 / A321neo
+					        </span>
+					    </div>
+
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            FREQUENCY:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            2x Daily (08:25 / 14:40)
+					        </span>
+					    </div>
+					</div>
+
+					<!-- Booking CTA -->
+					<div class="mt-4 pt-2 px-3 pb-3">
+					    <a href="./flight-details.html">
+					    	<button class="w-100 text-white text-uppercase fw-bold rounded-3 shadow booking-btn">
+						        <span>View Tokyo Flight Details</span>
+						        <i class="bi bi-arrow-right"></i>
+					    	</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-4">
+				<div class="card h-100">
+					<img src="./images/boracay.png" class="card-img-top" alt="...">
+					<div class="card-body d-flex justify-content-between">
+						<div>
+							<h4 class="card-title fw-bold text-uppercase destination-title">Boracay (Caticlan)</h4>
+							<p class="card-text small fw-semibold text-uppercase airport-name">Godofredo P. Ramos Airport</p>
+						</div>
+						<div class="flight-price-2 text-end">
+							<h6 class="fare-label">From</h6>
+							<div>
+								<p class="mb-0 fare-price">&#8369;3,480 </p>
+							</div>
+						</div>
+					</div>
+					<div class="px-2 w-75 px-3">
+						<p class="text-secondary mt-4 flight-description">Pristine powdery white sands, vibrant sunsets, and seamless island transfer services direct to your resort.</p>
+					</div>
+					<div class="mt-5 ps-3 pt-4 border-top flight-details">
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            AIRCRAFT:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            De Havilland Dash 8-400
+					        </span>
+					    </div>
+
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            FREQUENCY:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            7x Daily Departures
+					        </span>
+					    </div>
+					</div>
+
+					<!-- Booking CTA -->
+					<div class="mt-4 pt-2 px-3 pb-3">
+						<a href="./flight-details-2.html">
+						    <button class="w-100 text-white text-uppercase fw-bold rounded-3 shadow booking-btn">
+						        <span>View Boracay Flight Details</span>
+						        <i class="bi bi-arrow-right"></i>
+						    </button>
+					    </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-4">
+				<div class="card h-100">
+					<img src="./images/los-angeles.jpg" class="card-img-top" alt="...">
+					<div class="card-body d-flex justify-content-between">
+						<div>
+							<h4 class="card-title fw-bold text-uppercase destination-title">Los Angeles, USA</h4>
+							<p class="card-text small fw-semibold text-uppercase airport-name">Tom Bradley Intl (Terminal B)</p>
+						</div>
+						<div class="flight-price text-end rounded">
+							<h6 class="d-block text-uppercase fw-bold fare-label">Starting from</h6>
+							<div>
+								<p class="mb-0 fare-price">&#8369;42,300 </p>
+								<div>($750)</div>
+							</div>
+						</div>
+					</div>
+					<div class="px-2 w-75 px-3">
+						<p class="text-secondary mt-4 flight-description">Direct transpacific connection from Manila to California. Enjoy fully flat beds in Mabuhay Class and generous baggage allowances.</p>
+					</div>
+					<div class="mt-5 ps-3 pt-4 border-top flight-details">
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            AIRCRAFT:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Boeing 777-300ER
+					        </span>
+					    </div>
+
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            FREQUENCY:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Daily Non-Stop (22:15)
+					        </span>
+					    </div>
+					</div>
+
+					<!-- Booking CTA -->
+					<div class="mt-4 pt-2 px-3 pb-3">
+						<a href="./flight-details-3.html">
+					    	<button class="w-100 text-white text-uppercase fw-bold rounded-3 shadow booking-btn">
+					        	<span>View Los Angeles Flight Details</span>
+					        	<i class="bi bi-arrow-right"></i>
+					    	</button>
+					    </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-4">
+				<div class="card h-100">
+					<img src="./images/cebu.jfif" class="card-img-top" alt="...">
+					<div class="card-body d-flex justify-content-between">
+						<div>
+							<h4 class="card-title fw-bold text-uppercase destination-title">Cebu (Queen City)</h4>
+							<p class="card-text small fw-semibold text-uppercase airport-name">Mactan-Cebu International (T1)</p>
+						</div>
+						<div class="flight-price-2 text-end">
+							<h6 class="fare-label">From</h6>
+							<div>
+								<p class="mb-0 fare-price">&#8369;2,980 </p>
+							</div>
+						</div>
+					</div>
+					<div class="px-2 w-75 px-3">
+						<p class="text-secondary mt-4 flight-description">Connect seamlessly to the heart of the Visayas. Heritage tours, world-class diving, lechon culinary trails, and beach escapes.</p>
+					</div>
+					<div class="mt-5 ps-3 pt-4 border-top flight-details">
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            AIRCRAFT:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Airbus A321 / A330
+					        </span>
+					    </div>
+
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            FREQUENCY:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            12x Daily Departures
+					        </span>
+					    </div>
+					</div>
+
+					<!-- Booking CTA -->
+					<div class="mt-4 pt-2 px-3 pb-3">
+						<a href="./flight-details-4.html">
+					    	<button class="w-100 text-white text-uppercase fw-bold rounded-3 shadow booking-btn">
+					        	<span>View Cebu Flight Details</span>
+					        	<i class="bi bi-arrow-right"></i>
+					    	</button>
+					    </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-4">
+				<div class="card h-100">
+					<img src="./images/singapore.webp" class="card-img-top" alt="...">
+					<div class="card-body d-flex justify-content-between">
+						<div>
+							<h4 class="card-title fw-bold text-uppercase destination-title">Singapore</h4>
+							<p class="card-text small fw-semibold text-uppercase airport-name">Changi International (Terminal 1)</p>
+						</div>
+						<div class="flight-price text-end rounded">
+							<h6 class="d-block text-uppercase fw-bold fare-label">Starting from</h6>
+							<div>
+								<p class="mb-0 fare-price">&#8369;8,920 </p>
+								<div>($158)</div>
+							</div>
+						</div>
+					</div>
+					<div class="px-2 w-75 px-3">
+						<p class="text-secondary mt-4 flight-description">Step into the Lion City. Experience lush urban gardens, Michelin-starred hawker delicacies, and world-class international shopping.</p>
+					</div>
+					<div class="mt-5 ps-3 pt-4 border-top flight-details">
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            AIRCRAFT:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Airbus A350 / A321neo
+					        </span>
+					    </div>
+
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            FREQUENCY:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            4x Daily Departures
+					        </span>
+					    </div>
+					</div>
+
+					<!-- Booking CTA -->
+					<div class="mt-4 pt-2 px-3 pb-3">
+						<a href="./flight-details-5.html">
+						    <button class="w-100 text-white text-uppercase fw-bold rounded-3 shadow booking-btn">
+						        <span>View Singapore Flight Details</span>
+						        <i class="bi bi-arrow-right"></i>
+						    </button>
+					    </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-lg-4">
+				<div class="card h-100">
+					<img src="./images/sydney.jfif" class="card-img-top" alt="...">
+					<div class="card-body d-flex justify-content-between">
+						<div>
+							<h4 class="card-title fw-bold text-uppercase destination-title">Sydney, Australia</h4>
+							<p class="card-text small fw-semibold text-uppercase airport-name">Kingsford Smith Intl (Terminal 1)</p>
+						</div>
+						<div class="flight-price text-end rounded">
+							<h6 class="d-block text-uppercase fw-bold fare-label">Starting from</h6>
+							<div>
+								<p class="mb-0 fare-price">&#8369;29,800 </p>
+								<div>($528)</div>
+							</div>
+						</div>
+					</div>
+					<div class="px-2 w-75 px-3">
+						<p class="text-secondary mt-4 flight-description">Experience iconic Sydney Harbour, Bondi coastal walks, and relaxed dining with Philippine Airlines' renowned warm service.</p>
+					</div>
+					<div class="mt-5 ps-3 pt-4 border-top flight-details">
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            AIRCRAFT:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Airbus A330-300
+					        </span>
+					    </div>
+
+					    <div>
+					        <span class="d-block text-uppercase fw-bold detail-label">
+					            FREQUENCY:
+					        </span>
+					        <span class="fw-semibold detail-value">
+					            Daily Non-Stop Flights
+					        </span>
+					    </div>
+					</div>
+
+					<!-- Booking CTA -->
+					<div class="mt-4 pt-2 px-3 pb-3">
+						<a href="./flight-details-6.html">
+						    <button class="w-100 text-white text-uppercase fw-bold rounded-3 shadow booking-btn">
+						        <span>View Sydney Flight Details</span>
+						        <i class="bi bi-arrow-right"></i>
+						    </button>
+					    </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main End -->
+
+	<!-- Footer Start -->
+	<footer>
+		<div class="container-fluid">
+			<div class="row g-4">
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<img src="./images/logo.jfif" class="img-fluid pb-3 logo">
+					<p>The flag carrier of the Philippines and Asia's first commercial airline, flying you to dream destinations with the Heart of the Filipino.</p>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>ABOUT PAL</h4>
+					<a class="text-decoration-none d-block" href="./about-us.html">About Our Airline</a>
+					<a class="text-decoration-none d-block" href="">Mabuhay Magazine</a>
+					<a class="text-decoration-none d-block" href="">Careers at PAL</a>
+					<a class="text-decoration-none d-block" href="">Fleet & Safety</a>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>MABUHAY MILES</h4>
+					<a class="text-decoration-none d-block" href="">Join Mabuhay Miles</a>
+					<a class="text-decoration-none d-block" href="">Redeem Flights</a>
+					<a class="text-decoration-none d-block" href="">Baggage Allowance</a>
+					<a class="text-decoration-none d-block" href="">Flight Status & Advisory</a>
+				</div>
+				<div class="col-12 col-md-12 col-lg-3 footer-column d-none d-md-block">
+					<h4>PAL SEAT SALE ALERTS</h4>
+					<p>Get early access to Ultimate Seat Sales and holiday promo fares.</p>
+					<input type="email" name="email" placeholder="Enter your email">
+					<a class="py-2 px-3 submit-arrow" href="">
+						<i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

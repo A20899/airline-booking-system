@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Google Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-3 border-primary">
+		<div class="container-fluid">
+			<img src="./images/logo.jfif" class="logo">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto align-items-end gap-4">
+					<a class="nav-link" href="./index.html">Home</a>
+					<a class="nav-link" href="./flights-page.html">Flights</a>
+					<a class="nav-link" href="./about-us.html">About Us</a>
+					<a class="nav-link active border-bottom border-danger border-2" aria-current="page" href="./contact-us.html">Contact Us</a>
+					<a id="book-now" class="nav-link bg-danger" href="./flights-page.html" tabindex="-1">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid contact-header">
+		<div class="row mx-3 py-5">
+			<div class="col-sm-12">
+				<div class="w-50">
+					<div class="contact-title">Contact Philippine Airlines</div>
+					<span>Get in touch with Philippine Airlines. Submit your online inquiry directly or connect with our verified official social media channels and communications team.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row py-5 px-5 g-4">
+			<div class="col-12 col-sm-6">
+				<div class="card">
+					<div class="border-bottom pb-4 mb-4 inquiry-header p-3">
+						<h2 class="fs-5 fw-bold text-pal-navy d-flex align-items-center gap-2">
+							<i class="bi bi-envelope text-pal-red"></i>
+							<span>Send an Online Inquiry</span>
+						</h2>
+
+						<p class="small text-secondary mt-1 mb-0">
+							Please fill in your ticket reference and details for expedited processing.
+						</p>
+
+					</div>
+
+					<form action="#" method="POST" onsubmit="event.preventDefault();" class="p-3">
+
+						<!-- Field 1: Topic Dropdown -->
+						<div class="mb-4">
+
+							<label class="form-label inquiry-label" for="inquiry-category">
+								Inquiry Category &amp; Topic
+								<span class="text-pal-red">*</span>
+							</label>
+
+							<select class="form-select inquiry-input" id="inquiry-category" name="category">
+								<option value="reservations">
+									General Inquiries &amp; Reservations
+								</option>
+
+								<option value="mabuhay-miles">
+									Mabuhay Miles &amp; Loyalty Rewards
+								</option>
+
+								<option value="rebooking">
+									Flight Rebooking, Cancellations &amp; Refunds
+								</option>
+
+								<option value="baggage">
+									Special Baggage, Medical &amp; Wheelchair Assistance
+								</option>
+
+								<option value="feedback">
+									Feedback, Compliments &amp; Service Complaints
+								</option>
+
+								<option value="cargo">
+									PAL Cargo Services &amp; Charter Inquiries
+								</option>
+							</select>
+
+						</div>
+
+
+						<!-- Field 2: Booking Reference / Ticket Number -->
+						<div class="mb-4">
+
+							<label class="form-label inquiry-label d-flex justify-content-between" for="booking-pnr">
+								<span>
+									Booking Reference (PNR) or E-Ticket Number
+								</span>
+
+								<span class="text-secondary fw-normal text-lowercase optional-text">
+									(optional if not yet booked)
+								</span>
+							</label>
+
+							<div class="position-relative">
+								<input class="form-control inquiry-input text-uppercase pnr-input" id="booking-pnr" name="pnr" placeholder="e.g. PR-983192 or 6-character PNR (e.g. ABC12D)" type="text">
+								<span class="position-absolute top-50 end-0 translate-middle-y me-3 pnr-label">
+									PAL E-TKT
+								</span>
+							</div>
+						</div>
+
+
+						<!-- Personal Contact Details -->
+						<div class="row g-3 mb-4">
+
+							<div class="col-12 col-sm-6">
+
+								<label class="form-label inquiry-label" for="full-name">
+								Full Name
+								<span class="text-pal-red">*</span>
+								</label>
+								<input class="form-control inquiry-input" id="full-name" name="fullname" placeholder="Juan Dela Cruz" required type="text">
+							</div>
+
+
+							<div class="col-12 col-sm-6">
+								<label class="form-label inquiry-label"for="contact-phone">
+								Mobile / Phone
+								<span class="text-pal-red">*</span>
+								</label>
+								<input class="form-control inquiry-input" id="contact-phone" name="phone" placeholder="+63 917 123 4567" required type="tel">
+							</div>
+
+						</div>
+
+
+						<!-- Email Address -->
+						<div class="mb-4">
+
+							<label class="form-label inquiry-label" for="email-address">
+								Email Address
+								<span class="text-pal-red">*</span>
+							</label>
+
+							<input class="form-control inquiry-input" id="email-address" name="email" placeholder="juandelacruz@example.com" required type="email">
+
+						</div>
+
+
+						<!-- Detailed Inquiry -->
+						<div class="mb-4">
+
+							<label class="form-label inquiry-label" for="inquiry-message">
+								Your Detailed Inquiry / Request
+								<span class="text-pal-red">*</span>
+							</label>
+
+						<textarea class="form-control inquiry-input" id="inquiry-message" name="message" placeholder="Please provide specific flight details, passenger names, and reason for inquiry..." required rows="5">        </textarea>
+
+						</div>
+
+
+						<!-- Submit Button -->
+						<div class="pt-2">
+
+							<button class="btn inquiry-submit d-flex align-items-center justify-content-center gap-2" type="submit">
+								<span>Submit Inquiry</span>
+								<i class="bi bi-arrow-right"></i>
+							</button>
+
+						</div>
+
+
+						<!-- Response Guarantee Note -->
+						<div class="mt-4 d-flex align-items-start gap-3 p-3 response-note">
+
+							<i class="bi bi-info-circle-fill response-icon"></i>
+
+							<p class="small text-secondary mb-0">
+								<strong>Notice:</strong> Standard inquiries receive a response within 24 hours. If your departure date is within 48 hours, please call our 24/7 Customer Care Hotline immediately.
+							</p>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6">
+				<div class="card p-4">
+					<div class="social-bg-circle"></div>
+						<div class="position-relative social-content">
+						    <!-- Header -->
+						    <div class="d-flex align-items-center justify-content-between border-bottom pb-4 mb-4 social-header">
+						        <div>
+						            <div class="social-label text-uppercase fw-bold">
+						                Official Communities
+						            </div>
+
+						            <h2 class="fs-4 fw-bold text-pal-navy mt-1 mb-0">
+						                Official Social Media Channels
+						            </h2>
+						        </div>
+
+						        <span class="d-inline-flex align-items-center gap-2 bg-blue-light text-pal-blue small fw-semibold px-3 py-1 rounded-pill border border-blue">
+						            <span class="verified-dot"></span>
+						            <span>Verified Accounts</span>
+						        </span>
+						    </div>
+
+						    <!-- Description -->
+						    <p class="small text-secondary mb-4">
+						        Connect with Philippine Airlines across our verified official social media platforms
+						        for real-time announcements, stories, travel inspiration, and direct messaging support.
+						    </p>
+
+						    <!-- Social Media Cards -->
+						    <div class="row g-3 mb-4">
+
+						        <!-- Facebook -->
+						        <div class="col-12 col-sm-6">
+						            <div class="social-card bg-white p-3 rounded-3 border">
+						                <div class="d-flex align-items-start justify-content-between mb-3">
+
+						                    <div class="social-icon facebook-icon">
+						                        <i class="bi bi-facebook"></i>
+						                    </div>
+
+						                    <a href="https://facebook.com/PhilippineAirlines"
+						                       target="_blank"
+						                       class="small fw-bold text-pal-blue text-decoration-none">
+						                        Follow →
+						                    </a>
+						                </div>
+
+						                <div>
+						                    <span class="d-block small fw-bold text-dark">
+						                        Facebook &amp; Messenger
+						                    </span>
+
+						                    <span class="d-block small text-pal-blue fw-semibold mt-1">
+						                        @PhilippineAirlines
+						                    </span>
+
+						                    <span class="d-block social-description mt-1">
+						                        Official Facebook page updates and Messenger direct messaging.
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- X / Twitter -->
+						        <div class="col-12 col-sm-6">
+						            <div class="social-card bg-white p-3 rounded-3 border">
+						                <div class="d-flex align-items-start justify-content-between mb-3">
+
+						                    <div class="social-icon x-icon">
+						                        <i class="bi bi-twitter-x"></i>
+						                    </div>
+
+						                    <a href="https://twitter.com/FlyPAL"
+						                       target="_blank"
+						                       class="small fw-bold text-pal-blue text-decoration-none">
+						                        Follow →
+						                    </a>
+						                </div>
+
+						                <div>
+						                    <span class="d-block small fw-bold text-dark">
+						                        X / Twitter
+						                    </span>
+
+						                    <span class="d-block small text-pal-blue fw-semibold mt-1">
+						                        @FlyPAL
+						                    </span>
+
+						                    <span class="d-block social-description mt-1">
+						                        Real-time travel advisories, announcements, and flight alerts.
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- Instagram -->
+						        <div class="col-12 col-sm-6">
+						            <div class="social-card bg-white p-3 rounded-3 border">
+						                <div class="d-flex align-items-start justify-content-between mb-3">
+
+						                    <div class="social-icon instagram-icon">
+						                        <i class="bi bi-instagram"></i>
+						                    </div>
+
+						                    <a href="https://instagram.com/philippineairlines"
+						                       target="_blank"
+						                       class="small fw-bold text-pal-blue text-decoration-none">
+						                        Follow →
+						                    </a>
+						                </div>
+
+						                <div>
+						                    <span class="d-block small fw-bold text-dark">
+						                        Instagram
+						                    </span>
+
+						                    <span class="d-block small text-pal-blue fw-semibold mt-1">
+						                        @philippineairlines
+						                    </span>
+
+						                    <span class="d-block social-description mt-1">
+						                        Visual travel inspiration, stories, and behind-the-scenes moments.
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- LinkedIn -->
+						        <div class="col-12 col-sm-6">
+						            <div class="social-card bg-white p-3 rounded-3 border">
+						                <div class="d-flex align-items-start justify-content-between mb-3">
+
+						                    <div class="social-icon linkedin-icon">
+						                        <i class="bi bi-linkedin"></i>
+						                    </div>
+
+						                    <a href="https://linkedin.com/company/philippine-airlines"
+						                       target="_blank"
+						                       class="small fw-bold text-pal-blue text-decoration-none">
+						                        Connect →
+						                    </a>
+						                </div>
+
+						                <div>
+						                    <span class="d-block small fw-bold text-dark">
+						                        LinkedIn
+						                    </span>
+
+						                    <span class="d-block small text-pal-blue fw-semibold mt-1">
+						                        Philippine Airlines
+						                    </span>
+
+						                    <span class="d-block social-description mt-1">
+						                        Corporate press announcements, partnerships, and career listings.
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- YouTube -->
+						        <div class="col-12 col-sm-6">
+						            <div class="social-card bg-white p-3 rounded-3 border">
+						                <div class="d-flex align-items-start justify-content-between mb-3">
+
+						                    <div class="social-icon youtube-icon">
+						                        <i class="bi bi-youtube"></i>
+						                    </div>
+
+						                    <a href="https://youtube.com/@PhilippineAirlinesOfficial"
+						                       target="_blank"
+						                       class="small fw-bold text-pal-blue text-decoration-none">
+						                        Subscribe →
+						                    </a>
+						                </div>
+
+						                <div>
+						                    <span class="d-block small fw-bold text-dark">
+						                        YouTube
+						                    </span>
+
+						                    <span class="d-block small text-pal-blue fw-semibold mt-1">
+						                        @PhilippineAirlinesOfficial
+						                    </span>
+
+						                    <span class="d-block social-description mt-1">
+						                        Safety videos, fleet features, destination guides, and brand commercials.
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+
+						        <!-- TikTok -->
+						        <div class="col-12 col-sm-6">
+						            <div class="social-card bg-white p-3 rounded-3 border">
+						                <div class="d-flex align-items-start justify-content-between mb-3">
+
+						                    <div class="social-icon tiktok-icon">
+						                        <i class="bi bi-tiktok"></i>
+						                    </div>
+
+						                    <a href="https://tiktok.com/@philippineairlines"
+						                       target="_blank"
+						                       class="small fw-bold text-pal-blue text-decoration-none">
+						                        Follow →
+						                    </a>
+						                </div>
+
+						                <div>
+						                    <span class="d-block small fw-bold text-dark">
+						                        TikTok
+						                    </span>
+
+						                    <span class="d-block small text-pal-blue fw-semibold mt-1">
+						                        @philippineairlines
+						                    </span>
+
+						                    <span class="d-block social-description mt-1">
+						                        Trending flight crew content, travel hacks, and behind-the-scenes clips.
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+
+						    </div>
+
+						    <!-- Verification Notice -->
+						    <div class="verification-note p-3 rounded-3 d-flex align-items-center justify-content-between">
+
+						        <div class="d-flex align-items-center gap-2 small">
+						            <span class="verification-status"></span>
+
+						            <span class="text-secondary fw-medium">
+						                All listed accounts are officially verified by Philippine Airlines.
+						                Beware of unofficial channels.
+						            </span>
+						        </div>
+
+						        <a href="#"
+						           class="small text-pal-blue fw-bold text-decoration-none ms-3">
+						            Report Fake Account →
+						        </a>
+						    </div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row g-4">
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<img src="./images/logo.jfif" class="img-fluid pb-3 logo">
+					<p>The flag carrier of the Philippines and Asia's first commercial airline, flying you to dream destinations with the Heart of the Filipino.</p>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>ABOUT PAL</h4>
+					<a class="text-decoration-none d-block" href="./about-us.html">About Our Airline</a>
+					<a class="text-decoration-none d-block" href="">Mabuhay Magazine</a>
+					<a class="text-decoration-none d-block" href="">Careers at PAL</a>
+					<a class="text-decoration-none d-block" href="">Fleet & Safety</a>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>MABUHAY MILES</h4>
+					<a class="text-decoration-none d-block" href="">Join Mabuhay Miles</a>
+					<a class="text-decoration-none d-block" href="">Redeem Flights</a>
+					<a class="text-decoration-none d-block" href="">Baggage Allowance</a>
+					<a class="text-decoration-none d-block" href="">Flight Status & Advisory</a>
+				</div>
+				<div class="col-12 col-md-12 col-lg-3 footer-column d-none d-md-block">
+					<h4>PAL SEAT SALE ALERTS</h4>
+					<p>Get early access to Ultimate Seat Sales and holiday promo fares.</p>
+					<input type="email" name="email" placeholder="Enter your email">
+					<a class="py-2 px-3 submit-arrow" href="">
+						<i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

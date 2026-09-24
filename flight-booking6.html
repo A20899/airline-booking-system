@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flight Booking</title>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Google Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+	<!-- Navbar Start -->
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-3 border-primary">
+		<div class="container-fluid">
+			<img src="./images/logo.jfif" class="logo">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto align-items-end gap-4">
+					<a class="nav-link" aria-current="page" href="#">Home</a>
+					<a class="nav-link active border-bottom border-danger border-2" href="./flights-page.html">Flights</a>
+					<a class="nav-link" href="./about-us.html">About Us</a>
+					<a class="nav-link" href="./contact-us.html">Contact Us</a>
+					<a id="book-now" class="nav-link bg-danger" href="./flights-page.html" tabindex="-1">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+
+	<header class="text-center header-confirmation pt-5">
+
+	    <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill flight-badge">
+	        <span class="status-dot"></span>
+	        PR 428 · Manila (MNL) → Sydney (AUS)
+	    </div>
+
+	    <h1 class="confirmation-title">
+	        Passenger &amp; Trip Confirmation
+	    </h1>
+
+	    <p class="confirmation-description mx-auto">
+	        Complete your booking in a few simple steps. Review flight details and provide passenger information below.
+	    </p>
+	</header>
+
+	<div class="container-fluid px-3 px-md-5 section-container">
+		<section class="bg-white rounded-4 py-3 shadow-sm route-summary">
+		    <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-4 px-3 px-md-5">
+
+		        <!-- Left: Route Info -->
+		        <div class="d-flex align-items-center gap-3">
+
+		            <div class="route-image">
+		                <img
+		                    src="./images/sydney.jfif"
+		                    alt="Tokyo skyline with Tokyo Tower"
+		                >
+		            </div>
+
+		            <div>
+		                <div class="d-flex align-items-center gap-2">
+		                    <span class="route-time">06:55 MNL</span>
+		                    <span class="route-arrow">→</span>
+		                    <span class="route-time">08:25</span>
+
+		                    <span class="non-stop-badge">
+		                        Non-stop
+		                    </span>
+		                </div>
+
+		                <p class="route-details mb-0">
+		                    4h 10m · Airbus A350-900 · Economy Classic
+		                </p>
+
+		                <p class="route-date mb-0">
+		                    June 15, 2027 · 1 Passenger
+		                </p>
+		            </div>
+
+		        </div>
+
+		        <!-- Right: Price badge -->
+		        <div class="fare-summary">
+
+		            <span class="fare-label">
+		                Total Fare
+		            </span>
+
+		            <div class="d-flex align-items-baseline gap-1">
+		                <span class="fare-price">₱29,800.00</span>
+		                <span class="fare-currency">PHP</span>
+		            </div>
+
+		            <span class="fare-note">
+		                Taxes &amp; surcharges included
+		            </span>
+
+		        </div>
+
+		    </div>
+		</section>
+	</div>
+
+	<div class="container-fluid px-3 px-md-5 py-4 section-container">
+		<section class="bg-white rounded-4 p-4 p-sm-5 shadow-sm passenger-details">
+    
+		    <div class="d-flex align-items-center justify-content-between pb-4 border-bottom">
+		        <div>
+		            <h2 class="fs-5 fw-bold text-dark d-flex align-items-center gap-2 mb-0">
+		                <span class="step-number d-flex align-items-center justify-content-center rounded-circle text-white fw-semibold">
+		                    1
+		                </span>
+		                Passenger Details
+		            </h2>
+
+		            <p class="small text-secondary mt-1 ms-4 mb-0">
+		                Primary traveler matching government identification
+		            </p>
+		        </div>
+
+		        <span class="small fw-medium passenger-type">
+		            Adult (12+ yrs)
+		        </span>
+		    </div>
+
+		    <div class="row g-4 pt-2">
+
+		        <div class="col-12 col-sm-6">
+		            <div class="form-group">
+		                <label class="form-label small fw-semibold text-secondary">
+		                    First / Given Name
+		                </label>
+		                <input
+		                    class="form-control passenger-input"
+		                    type="text"
+		                    value="Juan"
+		                >
+		            </div>
+		        </div>
+
+		        <div class="col-12 col-sm-6">
+		            <div class="form-group">
+		                <label class="form-label small fw-semibold text-secondary">
+		                    Last / Family Name
+		                </label>
+		                <input
+		                    class="form-control passenger-input"
+		                    type="text"
+		                    value="Dela Cruz"
+		                >
+		            </div>
+		        </div>
+
+		        <div class="col-12 col-sm-6">
+		            <div class="form-group">
+		                <label class="form-label small fw-semibold text-secondary">
+		                    Email Address
+		                </label>
+		                <input
+		                    class="form-control passenger-input"
+		                    type="email"
+		                    value="juan@email.com"
+		                >
+		                <span class="input-note">
+		                    Booking confirmation &amp; boarding pass sent here
+		                </span>
+		            </div>
+		        </div>
+
+		        <div class="col-12 col-sm-6">
+		            <div class="form-group">
+		                <label class="form-label small fw-semibold text-secondary">
+		                    Mobile Number
+		                </label>
+		                <input
+		                    class="form-control passenger-input font-monospace mobile-input"
+		                    type="tel"
+		                    value="+63 912 345 6789"
+		                >
+		                <span class="input-note">
+		                    For SMS gate alerts and check-in reminders
+		                </span>
+		            </div>
+		        </div>
+
+		        <div class="col-12 col-sm-6">
+		            <div class="form-group">
+		                <label class="form-label small fw-semibold text-secondary">
+		                    Date of Birth
+		                </label>
+		                <input
+		                    class="form-control passenger-input font-monospace mobile-input"
+		                    type="text"
+		                    placeholder="DD / MM / YYYY"
+		                    value="14 / 08 / 1992"
+		                >
+		            </div>
+		        </div>
+
+		        <div class="col-12 col-sm-6">
+		            <div class="form-group">
+
+		                <div class="d-flex align-items-center justify-content-between">
+		                    <label class="form-label small fw-semibold text-secondary mb-2">
+		                        Passport Number
+		                    </label>
+
+		                    <span class="passport-note">
+		                        Optional now
+		                    </span>
+		                </div>
+
+		                <input
+		                    class="form-control passenger-input font-monospace text-uppercase passport-input"
+		                    type="text"
+		                    placeholder="P1234567B"
+		                >
+
+		            </div>
+		        </div>
+
+		    </div>
+		</section>
+	</div>
+
+	<div class="container-fluid px-3 px-md-5 pb-5 section-container">
+		<section class="bg-white rounded-4 p-4 p-sm-5 shadow-sm payment-section">
+		    <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-4 pb-4 border-bottom payment-header">
+
+		        <div>
+		            <h2 class="fs-5 fw-bold text-dark d-flex align-items-center gap-2 mb-0">
+		                <span class="step-number d-flex align-items-center justify-content-center rounded-circle text-white fw-semibold">
+		                    2
+		                </span>
+		                Payment Method
+		            </h2>
+
+		            <p class="small text-secondary mt-1 ms-4 mb-0">
+		                Select your preferred payment channel
+		            </p>
+		        </div>
+
+		        <div class="d-flex align-items-center gap-2 payment-methods">
+
+		            <!-- Credit Card -->
+		            <label class="payment-option">
+		                <input
+		                    checked
+		                    class="payment-radio"
+		                    name="payment_method"
+		                    type="radio"
+		                >
+
+		                <div class="payment-method d-flex align-items-center gap-2">
+		                    <i class="bi bi-credit-card"></i>
+		                    <span>Credit Card</span>
+		                </div>
+		            </label>
+
+		            <!-- GCash -->
+		            <label class="payment-option">
+		                <input
+		                    class="payment-radio"
+		                    name="payment_method"
+		                    type="radio"
+		                >
+
+		                <div class="payment-method d-flex align-items-center gap-2">
+		                    <i class="bi bi-wallet2"></i>
+		                    <span>GCash</span>
+		                </div>
+		            </label>
+
+		            <!-- PayPal -->
+		            <label class="payment-option">
+		                <input
+		                    class="payment-radio"
+		                    name="payment_method"
+		                    type="radio"
+		                >
+
+		                <div class="payment-method d-flex align-items-center gap-2">
+		                    <i class="bi bi-wallet-fill"></i>
+		                    <span>PayPal</span>
+		                </div>
+		            </label>
+
+		        </div>
+		    </div>
+
+
+		    <!-- Price Breakdown -->
+		    <div class="d-flex align-items-center justify-content-between small py-2 text-secondary">
+		        <span class="text-secondary">
+		            Economy Classic (1 Adult Passenger)
+		        </span>
+
+		        <span class="fw-semibold text-dark">
+		            ₱29,800.00
+		        </span>
+		    </div>
+		    <!-- Grand Total + Button -->
+		    <div class="pt-4 border-top d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-4">
+
+		        <div>
+		            <span class="small text-secondary fw-medium">
+		                Grand Total
+		            </span>
+
+		            <div class="d-flex align-items-baseline gap-2">
+		                <span class="grand-total">
+		                    ₱29,800.00
+		                </span>
+
+		                <span class="small fw-semibold text-secondary">
+		                    PHP
+		                </span>
+		            </div>
+		        </div>
+
+		        <button
+		            class="btn booking-payment-btn d-flex align-items-center justify-content-center gap-2"
+		            onclick="this.innerHTML = 'Processing...'; setTimeout(() => { this.innerHTML = '✓ Booking Confirmed (PR-90214)'; this.classList.remove('booking-payment-btn'); this.classList.add('booking-confirmed'); }, 1200);"
+		            type="button"
+		        >
+		            <span>Continue to Payment</span>
+		            <i class="bi bi-arrow-right"></i>
+		        </button>
+
+		    </div>
+
+
+		    <!-- Trust & Security -->
+		    <div class="pt-4 d-flex flex-wrap align-items-center justify-content-center gap-3 security-signals">
+
+		        <span class="d-inline-flex align-items-center gap-2">
+		            <i class="bi bi-lock-fill text-success"></i>
+		            256-bit SSL Encrypted
+		        </span>
+
+		        <span class="d-inline-flex align-items-center gap-2">
+		            <i class="bi bi-arrow-repeat text-primary"></i>
+		            24-hour Free Cancellation
+		        </span>
+
+		        <span class="d-inline-flex align-items-center gap-2">
+		            <i class="bi bi-ticket-perforated-fill text-warning"></i>
+		            Instant e-Ticket Delivery
+		        </span>
+
+		    </div>
+
+		</section>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row g-4">
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<img src="./images/logo.jfif" class="img-fluid pb-3 logo">
+					<p>The flag carrier of the Philippines and Asia's first commercial airline, flying you to dream destinations with the Heart of the Filipino.</p>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>ABOUT PAL</h4>
+					<a class="text-decoration-none d-block" href="./about-us.html">About Our Airline</a>
+					<a class="text-decoration-none d-block" href="">Mabuhay Magazine</a>
+					<a class="text-decoration-none d-block" href="">Careers at PAL</a>
+					<a class="text-decoration-none d-block" href="">Fleet & Safety</a>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>MABUHAY MILES</h4>
+					<a class="text-decoration-none d-block" href="">Join Mabuhay Miles</a>
+					<a class="text-decoration-none d-block" href="">Redeem Flights</a>
+					<a class="text-decoration-none d-block" href="">Baggage Allowance</a>
+					<a class="text-decoration-none d-block" href="">Flight Status & Advisory</a>
+				</div>
+				<div class="col-12 col-md-12 col-lg-3 footer-column d-none d-md-block">
+					<h4>PAL SEAT SALE ALERTS</h4>
+					<p>Get early access to Ultimate Seat Sales and holiday promo fares.</p>
+					<input type="email" name="email" placeholder="Enter your email">
+					<a class="py-2 px-3 submit-arrow" href="">
+						<i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

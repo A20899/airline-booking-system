@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flight Details</title>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Google Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+	<!-- Navbar Start -->
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-3 border-primary">
+		<div class="container-fluid">
+			<img src="./images/logo.jfif" class="logo">
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto align-items-end gap-4">
+					<a class="nav-link" aria-current="page" href="#">Home</a>
+					<a class="nav-link active border-bottom border-danger border-2" href="./flights-page.html">Flights</a>
+					<a class="nav-link" href="./about-us.html">About Us</a>
+					<a class="nav-link" href="./contact-us.html">Contact Us</a>
+					<a id="book-now" class="nav-link bg-danger" href="./flights-page.html" tabindex="-1">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+
+	<div class="bg-white border-bottom py-3 shadow-sm timetable-header">
+	    <div class="container px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+
+	        <div>
+	            <div class="d-flex align-items-center gap-2 timetable-label">
+	                <span class="status-dot"></span>
+	                <span>Official Network Timetable &amp; Booking Summary</span>
+	            </div>
+
+	            <h1 class="flight-summary-title">
+	                Flight Details &amp; Booking Summary
+	            </h1>
+	        </div>
+
+	        <div class="d-flex align-items-center gap-3 timetable-status">
+
+	            <div class="hub-badge">
+	                Hub: MNL (NAIA T2/T1)
+	            </div>
+
+	            <div class="operation-badge d-flex align-items-center gap-2">
+	                <span class="operation-dot"></span>
+	                <span>Network Normal Operations</span>
+	            </div>
+
+	        </div>
+	    </div>
+	</div>
+	 <!-- Main Layout Start -->
+	 <div class="container-fluid mt-5 p-5">
+	 	<div class="row align-items-start">
+	 		<div class="col-md-8">
+	 			<div class="rounded-3 flight-destination">
+	 				<div class="d-flex justify-content-between align-items-center p-2">
+	 					<div lass="d-flex align-items-center gap-2">
+	 						<span class="departure-text mb-0 ms-5">DEPARTURE</span>
+	 						<span class="departure-info text-white mb-0 ms-4">MANILA (MNL) → TOKYO HANEDA (HND)</span>
+	 					</div>
+	 					<div lass="d-flex align-items-center gap-2">
+	 						<span class="mabuhay-text mb-0 me-5">MABUHAY BUSINESS CLASS</span>
+	 						<span class="date-info mb-0 me-4">Tue, Nov 12, 2024</span>
+	 					</div>
+	 				</div>
+
+	 				<div class="p-5">
+	 					<div class="row g-4 align-items-center">
+
+	 						<!-- Origin Airport -->
+	 						<div class="col-md-4">
+	 							<div class="origin-time">06:55</div>
+	 							<div class="origin-name">MANILA (MNL)</div>
+	 							<div class="origin-airport">Ninoy Aquino Intl Airport, T2</div>
+	 						</div>
+
+	 						<!-- Mid-point Duration Graphic -->
+	 						<div class="col-md-4 text-center">
+	 							<div class="duration-info">Non-stop • 4h 10m</div>
+
+	 							<div class="route-line d-flex align-items-center justify-content-between px-2">
+	 								<span class="route-dot origin-dot"></span>
+
+	 								<!-- Plane Icon -->
+	 								<div class="plane-icon bg-white p-1 rounded-circle text-primary shadow-sm border">
+	 									<i class="bi bi-airplane"></i>
+	 								</div>
+
+	 								<span class="route-dot destination-dot"></span>
+	 							</div>
+
+	 							<div class="flight-info">
+	 								Flight PR 428 • Airbus A350-900
+	 							</div>
+	 						</div>
+
+	 						<!-- Destination Airport -->
+	 						<div class="col-md-4 text-md-end">
+	 							<div class="destination-time">12:05</div>
+	 							<div class="destination-name">TOKYO (HND)</div>
+	 							<div class="destination-airport">Tokyo Haneda Intl Airport, T3</div>
+	 						</div>
+
+	 					</div>
+
+	 					<!-- Business Class Inclusions & Amenities -->
+	 					<div class="mt-5 pt-4 border-top amenities-row">
+
+	 						<div class="amenity">
+	 							<i class="bi bi-check-lg"></i>
+	 							<span>Lie-Flat Seat (Suite 3A)</span>
+	 						</div>
+
+	 						<div class="amenity">
+	 							<i class="bi bi-check-lg"></i>
+	 							<span>Mabuhay Lounge Access</span>
+	 						</div>
+
+	 						<div class="amenity">
+	 							<i class="bi bi-check-lg"></i>
+	 							<span>2 x 32kg Baggage Allowance</span>
+	 						</div>
+
+	 					</div>
+	 				</div>
+	 			</div>
+
+	 			<div class="border rounded-5 mt-4">
+	 				<div class="d-flex justify-content-between px-3 pt-4 pb-4" id="amenities-services">
+	 					<div>
+	 						<span class="d-block flight-services">Included Amenities & In-Flight Services</span>
+	 						<span class="text-secondary mabuhay-text-experience">Mabuhay Business Class Experience</span>
+	 					</div>
+	 					<div>
+	 						<span class="complimentary-inclusions px-3 py-2 d-none d-sm-block">Complimentary Inclusions</span>
+	 					</div>
+	 				</div>
+
+	 				<div class="pt-5 px-3">
+	 					<div class="row row-cols-1 row-cols-md-2 g-4">
+	 						<div class="col">
+	 							<div class="card">
+	 								<div class="card-body">
+	 									<div>
+	 										<span>
+	 											<i class="bi bi-wifi"></i>
+	 										</span>
+	 										<span class="card-title">In-Flight Entertainment & Wi-Fi</span>
+	 									</div>
+	 									
+	 									<p class="card-text text-secondary">High-definition 18.5" touchscreen personal monitor with complimentary 100MB Wi-Fi access.</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 						<div class="col">
+	 							<div class="card">
+	 								<div class="card-body">
+	 									<div>
+	 										<span>
+	 											<i class="bi bi-book"></i>
+	 										</span>
+	 										<span class="card-title">Gourmet In-Flight Dining</span>
+	 									</div>
+
+	 									<p class="card-text text-secondary">Multi-course curated meal service designed by master Filipino chefs with complimentary fine wines and champagne.</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 						<div class="col">
+	 							<div class="card">
+	 								<div class="card-body">
+	 									<div>
+	 										<span>
+	 											<i class="bi bi-shield-fill-check"></i>
+	 										</span>
+	 										<span class="card-title">Priority Airport Privileges</span>
+	 									</div>
+	 									<p class="card-text text-secondary">Dedicated check-in counters, priority boarding, and priority baggage handling.</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 						<div class="col">
+	 							<div class="card">
+	 								<div class="card-body">
+	 									<div>
+	 										<span>
+	 											<i class="bi bi-box-fill"></i>
+	 										</span>
+	 										<span class="card-title">Luxury Amenity Kit</span>
+	 									</div>
+	 									<p class="card-text text-secondary">Premium wellness essentials, noise-cancelling headphones, and plush duvet & pillow set.</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-md-12 pt-4">
+	 						<div class="card mb-3">
+	 							<div class="card-body">
+	 								<div>
+	 									<span>
+	 										<i class="bi bi-lightning"></i>
+	 									</span>
+	 									<span class="card-title">Power & Connectivity</span>
+	 								</div>
+	 								<p class="card-text">Universal AC power outlet and dual USB ports at every seat.</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
+
+	 		<div class="col-md-4 border border-secondary rounded-3">
+	 			<div class="d-flex justify-content-between px-2 pt-4 border-bottom border-secondary border-3">
+	 				<span class="booking-summary-title">Booking Summary</span>
+	 				<span class="booking-summary-count">1 Adult</span>
+	 			</div>
+
+	 			<div class="fare-row pt-4 border-bottom border-secondary border-3">
+	 				<div class="d-flex justify-content-between px-2 pb-3">
+	 					<span class="text-secondary">Base Fare (Business Promo)</span>
+	 					<span class="fw-bold">₱15,200.00</span>
+	 				</div>
+	 				<div class="d-flex justify-content-between px-2 pb-3">
+	 					<span class="text-secondary">Fuel Surcharge & Carrier Fees</span>
+	 					<span class="fw-bold">₱1,950.00</span>
+	 				</div>
+	 				<div class="d-flex justify-content-between px-2 pb-3">
+	 					<span class="text-secondary">PH Terminal Fee</span>
+	 					<span class="fw-bold">₱550.00</span>
+	 				</div>
+	 				<div class="d-flex justify-content-between px-2 pb-3">
+	 					<span class="text-secondary">Aviation Security & VAT</span>
+	 					<span class="fw-bold">₱750.00</span>
+	 				</div>
+	 			</div>
+
+	 			<div class="pt-4 pb-4 promo-code border-bottom border-secondary border-3">
+				    <span class="d-block">Promo Code / Voucher</span>
+
+				    <div class="d-flex align-items-center mt-2">
+				        <input type="text" name="voucher" placeholder="Enter Code" class="ps-3">
+				        <a href="" class="text-decoration-none py-2 px-3 apply-button">
+				            Apply
+				        </a>
+				    </div>
+				</div>
+
+	 			<div>
+	 				<div class="d-flex justify-content-between pt-4">
+	 					<span class="total-fare text-secondary pt-4">TOTAL FARE (TAX INC.)</span>
+	 					<span class="total-amount">₱18,450.00</span>
+	 				</div>
+	 				<div class="d-flex justify-content-between">
+	 					<span class="text-secondary">All government taxes included</span>
+	 					<span class="text-secondary">~ $330 USD</span>
+	 				</div>
+	 			</div>
+
+	 			<div class="pt-5 pb-5 text-center">
+	 				<a href="./flight-booking.html" class="text-decoration-none py-3 px-5 confirm-booking">Confirm Booking</a>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+	 <!-- Main Layout End -->
+
+	 <footer>
+		<div class="container-fluid">
+			<div class="row g-4">
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<img src="./images/logo.jfif" class="img-fluid pb-3 logo">
+					<p>The flag carrier of the Philippines and Asia's first commercial airline, flying you to dream destinations with the Heart of the Filipino.</p>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>ABOUT PAL</h4>
+					<a class="text-decoration-none d-block" href="./about-us.html">About Our Airline</a>
+					<a class="text-decoration-none d-block" href="">Mabuhay Magazine</a>
+					<a class="text-decoration-none d-block" href="">Careers at PAL</a>
+					<a class="text-decoration-none d-block" href="">Fleet & Safety</a>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 footer-column">
+					<h4>MABUHAY MILES</h4>
+					<a class="text-decoration-none d-block" href="">Join Mabuhay Miles</a>
+					<a class="text-decoration-none d-block" href="">Redeem Flights</a>
+					<a class="text-decoration-none d-block" href="">Baggage Allowance</a>
+					<a class="text-decoration-none d-block" href="">Flight Status & Advisory</a>
+				</div>
+				<div class="col-12 col-md-12 col-lg-3 footer-column d-none d-md-block">
+					<h4>PAL SEAT SALE ALERTS</h4>
+					<p>Get early access to Ultimate Seat Sales and holiday promo fares.</p>
+					<input type="email" name="email" placeholder="Enter your email">
+					<a class="py-2 px-3 submit-arrow" href="">
+						<i class="bi bi-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
