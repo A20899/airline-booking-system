@@ -27,7 +27,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ms-auto align-items-end gap-4">
-					<a class="nav-link" aria-current="page" href="#">Home</a>
+					<a class="nav-link" aria-current="page" href="./index.html">Home</a>
 					<a class="nav-link active border-bottom border-danger border-2" href="./flights-page.html">Flights</a>
 					<a class="nav-link" href="./about-us.html">About Us</a>
 					<a class="nav-link" href="./contact-us.html">Contact Us</a>
@@ -71,16 +71,25 @@
 	 	<div class="row align-items-start">
 	 		<div class="col-md-8">
 	 			<div class="rounded-3 flight-destination">
-	 				<div class="d-flex justify-content-between align-items-center p-2">
-	 					<div lass="d-flex align-items-center gap-2">
-	 						<span class="departure-text mb-0 ms-5">DEPARTURE</span>
-	 						<span class="departure-info text-white mb-0 ms-4">MANILA (MNL) → TOKYO HANEDA (HND)</span>
-	 					</div>
-	 					<div lass="d-flex align-items-center gap-2">
-	 						<span class="mabuhay-text mb-0 me-5">MABUHAY BUSINESS CLASS</span>
-	 						<span class="date-info mb-0 me-4">Tue, Nov 12, 2024</span>
-	 					</div>
-	 				</div>
+	 				<div class="row departure-header align-items-center p-2 g-3">
+
+					    <div class="col-12 col-md-6 departure-group d-flex align-items-center gap-2">
+					        <span class="departure-text">DEPARTURE</span>
+
+					        <span class="departure-info text-white">
+					            MANILA (MNL) → TOKYO HANEDA (HND)
+					        </span>
+					    </div>
+
+					    <div class="col-12 col-md-6 class-group d-flex align-items-center gap-2">
+					        <span class="mabuhay-text">MABUHAY BUSINESS CLASS</span>
+
+					        <span class="date-info">
+					            Tue, Nov 12, 2024
+					        </span>
+					    </div>
+
+					</div>
 
 	 				<div class="p-5">
 	 					<div class="row g-4 align-items-center">
@@ -236,20 +245,20 @@
 
 	 			<div class="fare-row pt-4 border-bottom border-secondary border-3">
 	 				<div class="d-flex justify-content-between px-2 pb-3">
-	 					<span class="text-secondary">Base Fare (Business Promo)</span>
-	 					<span class="fw-bold">₱15,200.00</span>
+	 					<span class="fare-label text-secondary">Base Fare (Business Promo)</span>
+	 					<span class="fare-amount fw-bold">₱15,200.00</span>
 	 				</div>
 	 				<div class="d-flex justify-content-between px-2 pb-3">
-	 					<span class="text-secondary">Fuel Surcharge & Carrier Fees</span>
-	 					<span class="fw-bold">₱1,950.00</span>
+	 					<span class="fare-label text-secondary">Fuel Surcharge & Carrier Fees</span>
+	 					<span class="fare-amount fw-bold">₱1,950.00</span>
 	 				</div>
 	 				<div class="d-flex justify-content-between px-2 pb-3">
-	 					<span class="text-secondary">PH Terminal Fee</span>
-	 					<span class="fw-bold">₱550.00</span>
+	 					<span class="fare-label text-secondary">PH Terminal Fee</span>
+	 					<span class="fare-amount fw-bold">₱550.00</span>
 	 				</div>
 	 				<div class="d-flex justify-content-between px-2 pb-3">
-	 					<span class="text-secondary">Aviation Security & VAT</span>
-	 					<span class="fw-bold">₱750.00</span>
+	 					<span class="fare-label text-secondary">Aviation Security & VAT</span>
+	 					<span class="fare-amount fw-bold">₱750.00</span>
 	 				</div>
 	 			</div>
 
@@ -265,7 +274,7 @@
 				</div>
 
 	 			<div>
-	 				<div class="d-flex justify-content-between pt-4">
+	 				<div class="d-flex justify-content-between align-items-center pt-4">
 	 					<span class="total-fare text-secondary pt-4">TOTAL FARE (TAX INC.)</span>
 	 					<span class="total-amount">₱18,450.00</span>
 	 				</div>
@@ -276,7 +285,7 @@
 	 			</div>
 
 	 			<div class="pt-5 pb-5 text-center">
-	 				<a href="./flight-booking.html" class="text-decoration-none py-3 px-5 confirm-booking">Confirm Booking</a>
+	 				<a href="./flight-booking.html" class="text-decoration-none py-3 px-5 py-md-2 px-md-3 py-lg-3 px-lg-5 confirm-booking">Confirm Booking</a>
 	 			</div>
 	 		</div>
 	 	</div>
